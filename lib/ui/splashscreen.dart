@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
+  static String id = 'splash_screen';
   @override
   _SplashScreenState createState() => _SplashScreenState();
 }
@@ -8,6 +9,10 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return SafeArea(
+      child: Scaffold(
+        body: Text("Hello dear Friend bushra"),
+      ),
+    );
   }
 }
