@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:onmyway_bushra/ui/languageselect.dart';
 import 'package:onmyway_bushra/ui/splashscreen.dart';
 
 void main() {
@@ -26,7 +27,8 @@ class MyApp extends StatelessWidget {
       initialRoute: SplashScreen.id,
       routes: {
         SplashScreen.id: (context) =>
-            SplashScreen() //create a referenece for this screen
+            SplashScreen(), //create a referenece for this screen
+        LanguageSelect.id: (context) => LanguageSelect(),
       },
     );
   }
