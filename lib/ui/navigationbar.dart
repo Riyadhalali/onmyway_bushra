@@ -1,13 +1,8 @@
-import 'package:alatareekeh/ui/addSeekService.dart';
-import 'package:alatareekeh/ui/myservices.dart';
-import 'package:alatareekeh/ui/search.dart';
-import 'package:alatareekeh/ui/seekservice.dart';
 import 'package:alatareekeh/ui/signin.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
-import 'checkappversion.dart';
 import 'home.dart';
 import 'myappointments.dart';
 import 'seekedServices.dart';
@@ -116,35 +111,35 @@ class _NavigationState extends State<Navigation> {
                 'search'.tr().toString(),
               ),
               onTap: () {
-                Navigator.pushNamed(context, Search.id);
+                //     Navigator.pushNamed(context, Search.id);
               },
             ),
             ListTile(
               leading: Icon(Icons.add),
               title: Text('provideservice'.tr().toString()),
               onTap: () {
-                Navigator.pushNamed(context, AddSeekService.id); // add service
+                //  Navigator.pushNamed(context, AddSeekService.id); // add service
               },
             ),
             ListTile(
               leading: Icon(Icons.car_repair),
               title: Text('seekservice'.tr().toString()),
               onTap: () {
-                Navigator.pushNamed(context, SeekService.id); // seek service
+                //  Navigator.pushNamed(context, SeekService.id); // seek service
               },
             ),
             ListTile(
               leading: Icon(Icons.person_pin),
               title: Text('myservices'.tr().toString()),
               onTap: () {
-                Navigator.pushNamed(context, MyServices.id);
+                //   Navigator.pushNamed(context, MyServices.id);
               },
             ),
             ListTile(
               leading: Icon(Icons.update),
               title: Text('checkforupdates'.tr().toString()),
               onTap: () {
-                Navigator.pushNamed(context, CheckAppVersion.id);
+                //  Navigator.pushNamed(context, CheckAppVersion.id);
               },
             ),
             ListTile(

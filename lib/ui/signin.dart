@@ -6,9 +6,7 @@ import 'package:alatareekeh/services/GetUserInfo.dart';
 import 'package:alatareekeh/services/getlogindata.dart';
 import 'package:alatareekeh/services/sharedpref.dart';
 import 'package:alatareekeh/services/webservices.dart';
-import 'package:alatareekeh/ui/forgetpassword.dart';
 import 'package:alatareekeh/ui/navigationbar.dart';
-import 'package:alatareekeh/ui/register.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -125,6 +123,7 @@ class _SignInState extends State<SignIn> {
     // //-> save user profile to shared pref
     sharedPref.setData('username', usernameData); // save the username
     sharedPref.setData('gender', userGenderData); //save gender
+    Navigator.pushNamed(context, Navigation.id);
   }
   //----------------------------------------------------------------------------
 
@@ -206,7 +205,7 @@ class _SignInState extends State<SignIn> {
       width: MediaQuery.of(context).size.width, // take all space available
       child: FlatButton(
         onPressed: () {
-          Navigator.pushNamed(context, ForgetPassword.id);
+          //  Navigator.pushNamed(context, ForgetPassword.id);
         },
         child: Text("forgetpassword".tr().toString()),
       ),
@@ -225,7 +224,7 @@ class _SignInState extends State<SignIn> {
         Container(
           child: FlatButton(
             onPressed: () {
-              Navigator.pushNamed(context, Register.id);
+              //         Navigator.pushNamed(context, Register.id);
             },
             child: Text(
               'signup'.tr().toString(),
